@@ -1,0 +1,39 @@
+body * {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.box {
+  width: auto;
+  height: 200px;
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.sortable-ghost {
+  opacity: 0.6;
+  border: 2px #000 dashed;
+  transform: scale(0.92);
+}
+
+.sortable-selected {
+  border: 2px green dashed;
+}
+
+.sortable-drag {
+  border: 20px solid dashed;
+}
+
+.sortable-swap-highlight {
+  background-color: #fa0a;
+}
